@@ -34,7 +34,7 @@ dimmableLight = function(group, name) {
       type: "brightness",
       location: group,
       light: name,
-      brightness: brightness,
+      value: brightness,
       device: telegram.enoceanAddress()
     });
   });
@@ -49,7 +49,7 @@ onOffLight = function(group, name) {
       type: "brightness",
       location: group,
       light: name,
-      brightness: brightness,
+      value: brightness,
       device: telegram.enoceanAddress()
     });
   });
