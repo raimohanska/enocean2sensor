@@ -10,12 +10,12 @@ temperature = (location, min = 0, max = 40) -> (telegram, client) ->
 dimmableLight = (group, name) -> repeated (telegram, client) ->
   brightness = telegram.buffer[8]
   sendToServer client,
-    { collection: "lights", type: "brightness", location: group, light: name, brightness, device: telegram.enoceanAddress() }
+    { collection: "lights", type: "brightness", location: group, light: name, value:brightness, device: telegram.enoceanAddress() }
 
 onOffLight = (group, name) -> repeated (telegram, client) ->
   brightness = telegram.buffer[9] * 100
   sendToServer client,
-    { collection: "lights", type: "brightness", location: group, light: name, brightness, device: telegram.enoceanAddress() }
+    { collection: "lights", type: "brightness", location: group, light: name, value:brightness, device: telegram.enoceanAddress() }
 
 hourly=3600 * 1000
 repeated = (fn) ->
