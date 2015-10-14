@@ -1,5 +1,5 @@
 {
-  "name": "enocean-keen",
+  "name": "enocean2sensor",
   "version": "0.0.0",
   "dependencies": {
     "baconjs": "^0.7",
