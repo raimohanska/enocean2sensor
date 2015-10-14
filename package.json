@@ -1,0 +1,20 @@
+{
+  "name": "enocean-keen",
+  "version": "0.0.0",
+  "dependencies": {
+    "baconjs": "^0.7",
+    "coffee-script": "1.7.1",
+    "keen.io": "^0.1",
+    "lodash": "^2.4.1",
+    "sensor-client": "git://github.com/raimohanska/sensor-client"
+  },
+  "devDependencies": {
+    "grunt": "0.4",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-coffee": "~0.10.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-watch": "~0.5"
+  },
+  "main": "dist/enocean2sensor.js"
+}
